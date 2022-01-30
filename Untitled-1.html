@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div class="btns">
+    <ul> 
+      <li>
+        <div class="btn btn-blue" onclick="changeMaterial('plavo')"></div>
+      </li>
+      <li>
+        <div class="btn btn-red" onclick="changeMaterial('crveno')"></div>
+      </li>
+      <li>
+        <div class="btn btn-white" onclick="changeMaterial('belo')"></div>
+      </li>
+    </ul>
+</div>
+<div class="conteiner" id="3D-conteiner"></div>
+
+  </body>
+
+  <script src="https://distcdn.unlimited3d.com/pres/v/2.0.5/unlimited3d.min.js"></script>
+  <script>
+    var options = {
+      distID: "54729",
+      solution3DName: "airmax",
+      projectName: "redminion",
+      solution3DID: "39285",
+      containerID: "3D-conteiner",
+    };
+    Unlimited3D.init(options);
+
+    function changeMaterial(color) {
+      Unlimited3D.changeMaterial({ parts: ["part"], material: color });
+    }
+  </script>
+</html>

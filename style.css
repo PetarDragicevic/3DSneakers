@@ -1,0 +1,47 @@
+
+body {
+    background-color: wheat;
+}
+
+.conteiner {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(110, 156, 133);
+    color: black;
+    margin-left: 200px;
+    border-radius: 50%;
+    margin-top: -350px;
+}
+
+
+
+.btns li {
+    display:inline;
+}
+
+.btn {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: solid black 3px;
+    background-color: green;
+    
+}
+
+
+.btn-blue {
+    background-color: blue;
+    
+}
+
+
+.btn-red {
+    background-color: red;
+}
+
+
+.btn-white {
+    background-color: white;
+}
+
+
